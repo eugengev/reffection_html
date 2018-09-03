@@ -1,0 +1,653 @@
+body 
+    +FFOSR
+
+.hide
+    display: none
+
+h1, h2, h3, h4, h5, h6 
+    +FFUB    
+    color: #30215f
+h2
+    font-size: 60px
+    line-height: 75px
+    @media (max-width: 1024px)
+        font-size: 24px
+        line-height: normal
+
+.btn-blue
+    background-color: rgb(28, 170, 226)
+    width: 229px
+    height: 50px
+    border-radius: 20px
+    font-size: 16px
+    line-height: 50px
+    color: #ffffff
+    text-decoration: none
+    +FFUB
+    display: inline-block
+    &:visited
+        color: #ffffff
+
+
+.jobs
+    padding-top: 115px
+    // background: url(../images/jobs-bg.png) no-repeat center bottom
+    background-size: 100% auto
+    // padding-bottom: 200px
+    margin-bottom: 102px
+    h1
+        font-size: 60px
+        color: rgb(48, 33, 95)
+        line-height: 75px
+        padding-bottom: 92px
+        margin: 0
+    h2
+        font-size: 40px
+        color: #30215f
+        padding-bottom: 50px
+        padding-top: 78px
+        margin: 0        
+    &__info_item
+        max-width: 370px
+        @media (max-width: 1024px)
+            max-width: unset
+            padding-bottom: 30px
+        &_pic
+            height: 66px
+            @media (max-width: 1024px)
+                display: inline-block
+                width: 45px
+                float: left
+        &_title
+            max-width: 220px
+            min-height: 130px
+            font-size: 21px
+            color: #30215f
+            line-height: 30px
+            @media (max-width: 1024px)
+                display: block
+                margin-left: 65px
+                max-width: unset  
+                min-height: unset  
+                font-size: 14px
+                line-height: normal
+
+    h5
+        font-weight: normal
+        +FFOSR
+    .card.show button
+        +FFOSR
+        border: none
+        font-size: 30px
+        color: #1caae2
+        background: none
+        font-weight: normal
+        padding-left: 56px
+        position: relative
+        outline: none
+        text-transform: uppercase
+        &:before
+            content: ""
+            width: 14px
+            height: 14px
+            display: inline-block
+            position: absolute
+            background: #1caae2
+            border-radius: 50%
+            position: absolute
+            left: 2px
+            top: 50%
+            margin-top: -7px
+    .card button
+        +FFOSR
+        border: none
+        font-size: 30px
+        color: #1caae2
+        background: none
+        font-weight: normal
+        padding-left: 56px
+        position: relative
+        outline: none
+        text-transform: uppercase        
+        border: none
+        font-size: 30px
+        color: #30215f
+        background: none
+        font-weight: normal
+        &:before
+            content: ""
+            width: 14px
+            height: 14px
+            display: inline-block
+            position: absolute
+            border-radius: 50%
+            position: absolute
+            left: 2px
+            top: 50%
+            margin-top: -7px            
+            background: #30215f
+    .card-body
+        padding-left: 58px
+        color: #ffffff
+        font-size: 21px
+        line-height: 36px     
+    .card-header
+        padding-bottom: 52px
+    .card.show
+        background: #072a43
+        padding-bottom: 65px
+        margin-bottom: 58px
+        .card-header
+            padding-top: 58px
+            padding-bottom: 22px
+
+.enter-comand
+    padding-bottom: 98px
+    h3
+        font-size: 40px
+        color: #30215f
+        margin: 0
+        line-height: 37px
+        &.title2
+            font-size: 32px
+    form
+        margin-left: 28px
+        display: block
+    &__input
+        border: #959595 solid 1px
+        border-radius: 22px
+        height: 50px
+        padding-left: 35px
+        padding-right: 35px
+        width: 310px
+        margin-right: 22px
+        font-size: 18px
+        color: #959595
+        outline: none
+    &__submit
+        outline: none
+        width: 230px
+        height: 50px
+        background: #1caae2
+        border-radius: 22px
+        border: none
+        +FFUB
+        color: #ffffff
+        font-size: 16px
+        cursor: pointer
+    &__info
+        padding-top: 18px
+        margin-left: 28px
+        font-size: 13px
+        letter-spacing: -1.3px
+        color: #959595
+        a
+            color: #1caae2
+            text-decoration: underline
+
+.form_callback
+    display: none
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 101
+    width: 100%
+    height: 100%
+    background: #2c4a5f
+    &__modal
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        background: #ffffff
+        min-width: 622px
+        min-height: 510px   
+        border-radius: 10px
+        @media (max-width: 1024px)
+            min-width: 100%
+    &__close
+        position: absolute
+        right: 15px
+        top: 15px
+        display: inline-block
+        width: 16px
+        height: 16px
+        background: url(../images/modal-close.png) no-repeat center
+    &__title
+        padding-top: 50px
+        font-size: 30px
+        line-height: 36px
+        color: #30215f
+        font-weight: bold
+        text-align: center
+        margin: 0
+        @media (max-width: 1024px)
+            font-size: 28px
+    &__form
+        padding-top: 46px
+        padding-bottom: 22px
+        width: 300px
+        margin-left: auto
+        margin-right: auto
+        width: auto
+        padding-left: 15px
+        padding-right: 15px
+        &_row
+            padding-bottom: 20px
+        &_input
+            width: 100%
+            height: 50px
+            border: #959595 solid 1px
+            border-radius: 22px
+            font-size: 16px
+            padding-left: 30px
+            padding-right: 30px
+        &_submit
+            width: 100%
+            height: 50px
+            border-radius: 22px
+            border: none
+            background: #1caae1
+            color: #fff
+            +FFUB    
+            font-weight: bold
+    &__info
+        max-width: 340px
+        margin-left: auto
+        margin-right: auto
+        font-size: 12px
+        color: #959595
+        font-weight: 100
+        text-align: center
+        a
+            color: #1caae2
+
+.about
+    .container
+        position: relative
+    &__top
+        background: url(../images/about-top.jpg) no-repeat center
+        height: 100vh
+        position: relative
+    &__text-info
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        max-width: 680px
+        width: 100%
+        text-align: center
+        color: #ffffff
+        font-size: 21px
+        line-height: 36px
+        font-weight: 100
+        +FFOSR
+        @media (max-width: 1024px)
+            font-size: 14px
+            line-height: 23px        
+        h2
+            font-size: 60px
+            color: #ffffff
+            line-height: 75px
+            @media (max-width: 1024px)
+                font-size: 30px
+                line-height: 38px
+.who_my            
+    &__text-info
+        font-size: 21px
+        color: #30215f
+        line-height: 30px
+        padding-bottom: 60px
+        @media (max-width: 1024px)
+            font-size: 14px
+            line-height: 23px
+    h2
+        padding-bottom: 50px
+        margin: 0
+        @media (max-width: 1024px)
+            font-size: 24px
+            line-height: 75px   
+            padding-bottom: 0
+
+
+
+.parallax > use 
+  &:nth-child(1)
+    animation: move-forever 12s linear infinite
+    animation-delay: -2s  
+  &:nth-child(2)
+    animation: move-forever-other 12s linear infinite
+    animation-delay: -2s  
+    animation-duration: 5s
+
+  
+@keyframes move-forever
+    0% 
+        transform: translate(-90px , 0%)
+    100%
+        transform: translate(85px , 0%) 
+@keyframes move-forever-other
+    0% 
+        transform: translate(90px , 0%)
+    100%
+        transform: translate(-85px , 0%) 
+
+.preim
+    padding-top: 115px
+    @media (max-width: 1024px)
+        padding-top: 10px   
+    h2
+        @media (max-width: 1024px)
+            font-size: 24px
+            line-height: normal
+    &__circle
+        margin-left: 28px
+        position: relative
+        border-width: 2px
+        border-color: rgb(160, 159, 159)
+        border-style: dashed
+        border-radius: 50%
+        width: 537px
+        height: 537px
+        display: block
+        @media (max-width: 1024px)
+            display: none
+        &:before
+            content: ""
+            display: block
+            border-width: 2px
+            border-color: rgb(208, 208, 208)
+            border-style: dashed
+            border-radius: 50%
+            width: 365px
+            height: 365px
+            position: absolute
+            left: -92px
+            top: 50%
+            margin-top: -182px
+        .elp1
+            position: absolute
+            display: inline-block
+            border-radius: 50%
+            background-color: rgb(232, 232, 232)
+            position: absolute
+            left: 205px
+            top: -35px
+            width: 65px
+            height: 65px
+        .elp2
+            position: absolute
+            display: inline-block
+            border-radius: 50%
+            background-color: rgb(232, 232, 232)
+            position: absolute
+            left: 0px
+            top: 105px
+            width: 65px
+            height: 65px
+        .elp3
+            position: absolute
+            display: inline-block
+            border-radius: 50%
+            background-color: rgb(232, 232, 232)
+            position: absolute
+            left: 0px
+            top: 365px
+            width: 65px
+            height: 65px
+        .elp4
+            position: absolute
+            display: inline-block
+            border-radius: 50%
+            background-color: rgb(232, 232, 232)
+            position: absolute
+            left: 210px
+            top: 510px
+            width: 65px
+            height: 65px 
+        .elp
+            .small
+                display: block
+                text-align: center
+                line-height: 65px
+            .big
+                display: none
+            .text
+                display: none
+        .active
+            display: inline-block
+            border-radius: 50%
+            background-image: -moz-linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)
+            background-image: -webkit-linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)
+            background-image: -ms-linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)
+            background-image: linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)
+            position: absolute
+            left: 407px
+            top: 132px
+            width: 210px
+            height: 210px
+            padding: 13px
+            .small
+                display: none
+            .big
+                display: block
+                border-width: 2px
+                border-color: rgb(255, 255, 255)
+                border-style: solid
+                border-radius: 50%
+                width: 100%
+                height: 100%
+                line-height: 180px
+                text-align: center
+            .text
+                position: absolute
+                font-size: 24px
+                color: #313034
+                line-height: 30px
+                width: 550px
+                left: 245px
+                top: 50%
+                transform: translate(0, -50%)
+    h2
+        padding-top: 12px
+    .elipmob
+        font-size: 14px
+        color: #313034
+        position: relative
+        display: block
+        padding-bottom: 30px
+        &:after
+            content: ''
+            display: table
+            clear: both
+        .big
+            background-image: -moz-linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)
+            background-image: -webkit-linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)
+            background-image: -ms-linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)
+            background-image: linear-gradient( 45deg, rgb(28,170,255) 0%, rgb(113,92,232) 67%)            
+            display: block
+            border-radius: 50%
+            width: 65px
+            height: 65px
+            line-height: 65px
+            text-align: center
+            float: left       
+            position: relative 
+            &:before
+                content: ''
+                position: absolute
+                display: block
+                width: 57px
+                height: 57px
+                border-width: 2px
+                border-color: rgb(255, 255, 255)
+                border-style: solid
+                border-radius: 50%
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+            img
+                max-width: 30px
+
+        .text
+            display: block
+            position: absolute
+            font-size: 14px
+            color: #313034
+            line-height: normal
+            width: calc(100vw - 100px)
+            left: 85px
+            top: 50%
+            transform: translate(0, -50%)
+
+.client
+    padding-bottom: 130px
+    &__item
+        text-align: center
+        padding-bottom: 80px
+        filter: grayscale(100%)
+        &:hover
+            filter: grayscale(0)
+    h2
+        padding-bottom: 118px
+        margin: 0
+
+.recomend
+    h2
+        padding-bottom: 95px
+        margin: 0
+        
+.recomend_slider
+    padding-bottom: 100px
+    .slick-dots
+        display: block
+        list-style: none
+        text-align: center
+        li
+            display: inline-block
+            list-style: none
+            button
+                border: #1caae2 solid 1px
+                display: inline-block
+                width: 9px
+                height: 9px
+                background: none
+                border-radius: 50%
+                text-indent: -500000px
+                outline: nonw
+            &.slick-active
+                button
+                    background: #1caae2
+                    margin: 0 8px
+
+
+
+.recomend_slider_item
+    padding-bottom: 100px
+    &__pic
+        padding-top: 25px
+    &__fio
+        font-size: 30px
+        letter-spacing: 1px
+        color: #30215f
+        font-weight: bold
+        line-height: 36px
+    &__dolg
+        text-transform: uppercase
+        font-size: 21px
+        color: #818181
+        padding-top: 5px
+    &__text_short
+        color: #30215f
+        font-style: italic
+        font-size: 21px
+        line-height: 30px
+        padding-top: 46px
+        text-indent: 50px
+        position: relative
+        padding-bottom: 20px
+        &:before
+            content: ""
+            display: inline-block
+            background: url(../images/kavich.png) no-repeat
+            width: 30px
+            height: 20px
+            position: absolute
+            left: -2px
+            top: 38px
+    &__text_full
+        display: none
+        color: #30215f
+        font-style: italic
+        font-size: 21px
+        line-height: 30px
+        padding-top: 46px
+        text-indent: 50px
+        position: relative
+        padding-bottom: 20px
+        &:before
+            content: ""
+            display: inline-block
+            background: url(../images/kavich.png) no-repeat
+            width: 30px
+            height: 20px
+            position: absolute
+            left: -2px
+            top: 38px
+        p
+            padding-bottom: 20px
+    &__read_mo, a.client_slider__read_mo
+        text-transform: uppercase
+        font-size: 16px
+        color: #62a8de
+        display: block
+        padding-left: 50px
+        background: url(../images/read_mo.png) no-repeat left center
+        line-height: 23px
+        letter-spacing: -1.4px
+        text-decoration: none
+        span.r
+            display: inline-block
+        span.s
+            display: none
+        &:visited
+            color: #62a8de
+    &.full
+        .recomend_slider_item__text_short
+            display: none
+        .recomend_slider_item__text_full
+            display: block
+        .recomend_slider_item__read_mo
+            span.s
+                display: inline-block
+            span.r
+                display: none
+            
+.counter
+    width: 427px
+    position: absolute
+    right: 0
+    bottom: -120px
+    border-radius: 10px
+    background-color: rgb(255, 255, 255)
+    box-shadow: 0px 0px 82.96px 39.04px rgba(4, 24, 31, 0.27)
+    padding: 75px 32px 15px
+    font-size: 16px
+    font-weight: 100
+    color: #30215f
+    @media (max-width: 1024px)
+        display: none
+    &__pic
+        width: 53px
+        height: 53px
+        background: url(../images/counter-circle.png) no-repeat center
+        line-height: 52px
+        text-align: center
+    h4
+        font-size: 30px
+        line-height: 30px   
+        color: #30215f
+    .row
+        padding-bottom: 30px

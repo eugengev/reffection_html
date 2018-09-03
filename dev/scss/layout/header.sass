@@ -1,0 +1,383 @@
+.header 
+    position: relative
+    height: 100vh
+    min-height: 1155px
+    background: url(../images/header-bg.jpg) no-repeat center
+    background-size: cover
+    @media (max-width: 1024px)
+        min-height: 530px
+        background-size: auto 100%
+        background-position: left bottom
+    &__video
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+    &__top
+        padding-top: 13px
+    &__bt-menu
+        padding-top: 10px
+        display: inline-block
+    &__mouse
+        position: absolute
+        left: 50%
+        width: 31px
+        height: 106px
+        bottom: 130px
+        display: block
+        margin-left: -15px
+        background: url(../images/arrow-next.png) no-repeat center bottom
+        a
+            display: inline-block
+            width: 31px
+            height: 49px
+            background: url(../images/mouse-next.png) no-repeat center
+            -webkit-transition: all 1s linear
+            -moz-transition: all 1s linear
+            -o-transition: all 1s linear
+            transition: all 1s linear
+            &.hover
+                transform: translate(0px,-10px)
+                transition: all 1s linear
+        @media (max-width: 1024px)
+            display: none
+    &__central
+        position: absolute
+        top: 320px
+        left: 50%
+        transform: translate(-50%,0)
+        width: 100%
+        max-width: 810px
+        @media (max-width: 1024px)
+            top: 135px
+        h2
+            +FFUB
+            font-size: 48px
+            color: rgb(255, 255, 255)
+            text-align: center
+            line-height: 1.25
+            font-weight: bold
+            min-height: 240px
+            @media (max-width: 1024px)
+                font-size: 20px
+                line-height: 25px
+                min-height: auto
+    &__button
+        text-align: center
+        padding-top: 90px
+        @media (max-width: 1024px)
+            padding-top: 100px
+    &__links
+        position: absolute
+        bottom: 290px
+        text-align: center
+        left: 50%
+        transform: translate(-50%,0)
+        font-size: 30px
+        color: #ffffff
+        a
+            color: #ffffff
+            text-decoration: none
+            &:visited 
+                color: #ffffff
+
+.top_block
+    opacity: 1
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    height: 93px
+    background: #072a43
+    z-index: 50
+    &__top
+        padding-top: 18px
+    &__bt-menu
+        padding-top: 10px
+        display: inline-block
+
+.full_menu
+    display: none
+    position: fixed
+    z-index: 101
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background: rgba(7, 42, 67, 0.85)
+    @media (max-width: 1024px)
+        background: #072a43
+    &__bt-menu-close
+        padding-top: 17px
+        display: inline-block
+    .header__top
+        height: 93px
+        // margin-bottom: 120px
+    &__inner
+        width: 1347px
+        margin-left: auto
+        margin-right: auto
+        @media (max-width: 1024px)
+            width: auto
+            padding-top: 95px
+        div
+            @media (max-width: 1024px)
+                float: none
+                display: block
+                width: auto
+                height: auto
+                background: none
+    &__item1
+        float: left
+        width: 493px
+        height: 284px
+        background: url(../images/menu-itenm1-bg.png) no-repeat left top #fff
+        margin-bottom: 39px
+        a
+            padding-top: 155px
+            padding-left: 48px
+            display: block
+            font-size: 48px
+            height: 100%
+            color: #30215f
+            +FFUB
+            text-decoration: none
+            font-weight: bold
+            span
+                +FFOSR
+                font-weight: normal
+                display: block
+                padding-left: 50px
+                line-height: 23px
+                font-size: 16px
+                letter-spacing: -1.2px
+                color: #62a8de
+                text-transform: uppercase
+                background: url(../images/arrow-menu.png) no-repeat left center
+                margin-bottom: 6px
+            &:hover
+                box-shadow: 5px 0px 37.2px 2.8px rgba(4, 21, 33, 0.75) 
+        @media (max-width: 1024px)
+            float: none
+            display: block
+            width: auto
+            height: auto
+            background: none
+            border: none
+            margin-bottom: 0
+            box-shadow: none
+            padding-bottom: 35px
+            a, a:visited
+                padding: 0
+                font-size: 21px
+                text-align: center
+                line-height: 34px
+                color: #ffffff
+                span
+                    display: none            
+    &__item2
+        float: right
+        width: 493px
+        height: 425px
+        background: url(../images/menu-itenm2-bg.jpg) no-repeat left top
+        margin-bottom: 35px
+        box-shadow: 0 2px 0 #1a3a51 
+        a
+            padding-top: 289px
+            padding-left: 48px
+            height: 100%
+            display: block
+            font-size: 48px
+            color: #ffffff
+            +FFUB
+            text-decoration: none
+            font-weight: bold
+            span
+                +FFOSR
+                font-weight: normal
+                display: block
+                padding-left: 50px
+                line-height: 23px
+                font-size: 16px
+                letter-spacing: -1.2px
+                color: #ffffff
+                text-transform: uppercase
+                background: url(../images/arrow-menu.png) no-repeat left center
+                margin-bottom: 14px
+            &:hover
+                box-shadow: 5px 0px 37.2px 2.8px rgba(4, 21, 33, 0.75) 
+        @media (max-width: 1024px)
+            float: none
+            display: block
+            width: auto
+            height: auto
+            background: none
+            border: none
+            margin-bottom: 0
+            box-shadow: none    
+            padding-bottom: 35px        
+            a, a:visited
+                padding: 0
+                font-size: 21px
+                text-align: center
+                line-height: 34px
+                color: #ffffff
+                span
+                    display: none            
+    &__item3
+        float: left
+        width: 493px
+        height: 418px
+        background: url(../images/menu-itenm3-bg.jpg) no-repeat left top
+        margin-bottom: 35px
+        box-shadow: -2px 1px 0 #1a3a51 
+        a
+            padding-top: 273px
+            padding-left: 48px
+            display: block
+            height: 100%
+            font-size: 48px
+            color: #ffffff
+            +FFUB
+            text-decoration: none
+            font-weight: bold
+            span
+                +FFOSR
+                font-weight: normal
+                display: block
+                padding-left: 50px
+                line-height: 23px
+                font-size: 16px
+                letter-spacing: -1.2px
+                color: #ffffff
+                text-transform: uppercase
+                background: url(../images/arrow-menu.png) no-repeat left center
+                margin-bottom: 14px                
+            &:hover
+                box-shadow: 5px 0px 37.2px 2.8px rgba(4, 21, 33, 0.75) 
+        @media (max-width: 1024px)
+            float: none
+            display: block
+            width: auto
+            height: auto
+            background: none
+            border: none
+            margin-bottom: 0
+            box-shadow: none    
+            padding-bottom: 35px        
+            a, a:visited
+                padding: 0
+                font-size: 21px
+                text-align: center
+                line-height: 34px
+                color: #ffffff
+                span
+                    display: none            
+    &__item4
+        float: left
+        width: 672px
+        height: 284px
+        background: url(../images/menu-itenm4-bg.png) no-repeat right top #fff
+        margin-bottom: 35px
+        box-shadow: -2px 1px 0 #1a3a51 
+        transform: rotate(270deg)
+        transform-origin: 0 0 0
+        position: relative
+        top: -77px
+        right: -532px
+        a
+            padding-top: 153px
+            padding-left: 48px
+            display: block
+            height: 100%
+            font-size: 48px
+            color: #30215f
+            +FFUB
+            text-decoration: none
+            font-weight: bold
+            span
+                +FFOSR
+                font-weight: normal
+                display: block
+                padding-left: 50px
+                line-height: 23px
+                font-size: 16px
+                letter-spacing: -1.2px
+                color: #62a8de
+                text-transform: uppercase
+                background: url(../images/arrow-menu.png) no-repeat left center
+                margin-bottom: 7px                                
+            &:hover
+                box-shadow: 5px 0px 37.2px 2.8px rgba(4, 21, 33, 0.75) 
+        @media (max-width: 1024px)
+            float: none
+            display: block
+            width: auto
+            height: auto
+            background: none
+            border: none
+            margin-bottom: 0
+            box-shadow: none    
+            padding-bottom: 35px        
+            a, a:visited
+                padding: 0
+                font-size: 21px
+                text-align: center
+                line-height: 34px
+                color: #ffffff
+                span
+                    display: none            
+    &__item5
+        float: right
+        width: 493px
+        height: 284px
+        background: url(../images/menu-itenm5-bg.png) no-repeat left top #fff
+        margin-bottom: 35px
+        box-shadow: 0 2px 0 #1a3a51 
+        a
+            padding-top: 134px
+            padding-left: 48px
+            display: block
+            font-size: 48px
+            height: 100%
+            color: #30215f
+            +FFUB
+            text-decoration: none
+            font-weight: bold
+            span
+                +FFOSR
+                font-weight: normal
+                display: block
+                padding-left: 50px
+                line-height: 23px
+                font-size: 16px
+                letter-spacing: -1.2px
+                color: #62a8de
+                text-transform: uppercase
+                background: url(../images/arrow-menu.png) no-repeat left center
+                margin-bottom: 14px
+            &:hover
+                box-shadow: 5px 0px 37.2px 2.8px rgba(4, 21, 33, 0.75) 
+        @media (max-width: 1024px)
+            float: none
+            display: block
+            width: auto
+            height: auto
+            background: none
+            border: none
+            margin-bottom: 0
+            box-shadow: none    
+            padding-bottom: 35px        
+            a, a:visited
+                padding: 0
+                font-size: 21px
+                text-align: center
+                line-height: 34px
+                color: #ffffff
+                span
+                    display: none            
