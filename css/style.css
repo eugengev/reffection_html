@@ -322,6 +322,8 @@ h2 { font-size: 60px; line-height: 75px; }
 
 .preim .elipmob { font-size: 14px; color: #313034; position: relative; display: block; padding-bottom: 30px; }
 
+@media (min-width: 1024px) { .preim .elipmob { display: none; } }
+
 .preim .elipmob:after { content: ''; display: table; clear: both; }
 
 .preim .elipmob .big { background-image: linear-gradient(45deg, #1caaff 0%, #715ce8 67%); display: block; border-radius: 50%; width: 65px; height: 65px; line-height: 65px; text-align: center; float: left; position: relative; }
@@ -334,13 +336,19 @@ h2 { font-size: 60px; line-height: 75px; }
 
 .client { padding-bottom: 130px; }
 
+@media (max-width: 1024px) { .client { padding-bottom: 20px; } }
+
 .client__item { text-align: center; padding-bottom: 80px; filter: grayscale(100%); }
 
 .client__item:hover { filter: grayscale(0); }
 
 .client h2 { padding-bottom: 118px; margin: 0; }
 
+@media (max-width: 1024px) { .client h2 { padding-bottom: 0; } }
+
 .recomend h2 { padding-bottom: 95px; margin: 0; }
+
+@media (max-width: 1024px) { .recomend h2 { padding-bottom: 20px; } }
 
 .recomend_slider { padding-bottom: 100px; }
 
@@ -358,17 +366,25 @@ h2 { font-size: 60px; line-height: 75px; }
 
 .recomend_slider_item__fio { font-size: 30px; letter-spacing: 1px; color: #30215f; font-weight: bold; line-height: 36px; }
 
+@media (max-width: 1024px) { .recomend_slider_item__fio { font-size: 14px; line-height: 30px; } }
+
 .recomend_slider_item__dolg { text-transform: uppercase; font-size: 21px; color: #818181; padding-top: 5px; }
+
+@media (max-width: 1024px) { .recomend_slider_item__dolg { font-size: 14px; } }
 
 .recomend_slider_item__text_short { color: #30215f; font-style: italic; font-size: 21px; line-height: 30px; padding-top: 46px; text-indent: 50px; position: relative; padding-bottom: 20px; }
 
 .recomend_slider_item__text_short:before { content: ""; display: inline-block; background: url(../images/kavich.png) no-repeat; width: 30px; height: 20px; position: absolute; left: -2px; top: 38px; }
+
+@media (max-width: 1024px) { .recomend_slider_item__text_short { font-size: 14px; line-height: 23px; } }
 
 .recomend_slider_item__text_full { display: none; color: #30215f; font-style: italic; font-size: 21px; line-height: 30px; padding-top: 46px; text-indent: 50px; position: relative; padding-bottom: 20px; }
 
 .recomend_slider_item__text_full:before { content: ""; display: inline-block; background: url(../images/kavich.png) no-repeat; width: 30px; height: 20px; position: absolute; left: -2px; top: 38px; }
 
 .recomend_slider_item__text_full p { padding-bottom: 20px; }
+
+@media (max-width: 1024px) { .recomend_slider_item__text_full { font-size: 14px; line-height: 23px; } }
 
 .recomend_slider_item__read_mo, .recomend_slider_item a.client_slider__read_mo { text-transform: uppercase; font-size: 16px; color: #62a8de; display: block; padding-left: 50px; background: url(../images/read_mo.png) no-repeat left center; line-height: 23px; letter-spacing: -1.4px; text-decoration: none; }
 
